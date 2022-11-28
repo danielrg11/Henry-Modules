@@ -59,6 +59,8 @@ describe('Una linked list', function() {
   it('remove deberia sacar el ultimo nodo ingresado y devolver su valor', function() {
     linkedList.add('first');
     linkedList.add('second');
+    linkedList.add('third');
+    expect(linkedList.remove()).toBe('third');
     expect(linkedList.remove()).toBe('second');
     expect(linkedList.remove()).toBe('first');
   });
